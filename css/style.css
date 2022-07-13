@@ -1,0 +1,236 @@
+:root {
+  --color1: #05b1b1;
+  --color2: #52339a;
+}
+header,
+footer,
+section {
+  padding: 100px 0;
+}
+
+header {
+  padding: 200px 0;
+}
+
+header,
+footer {
+  background: url(/img/pattern.png), var(--color1);
+  background: url(/img/pattern.png),
+    -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+  background: url(/img/pattern.png),
+    -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+  background: url(../img/pattern.png),
+    linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+  filter: url(/img/pattern.png),
+    progid:
+      DXImageTransform.Microsoft.gradient(
+        startColorstr=var(--color1),
+        endColorstr=var(--color2),
+        GradientType=1
+      );
+  background-size: contain;
+}
+
+.itd__play {
+  background-color: var(--color1);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 30px auto;
+  transition: all 0.2s ease;
+}
+
+.itd__play:hover {
+  background-color: var(--color2);
+}
+
+.itd__triangle {
+  margin-right: -3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.btn-itd {
+  max-width: 200px;
+  display: block;
+  color: var(--bs-white);
+  background-color: var(--color2);
+  margin: 0 auto;
+}
+
+.btn-itd:hover {
+  background-color: var(--color1);
+  color: var(--bs-white);
+}
+.modal {
+  backdrop-filter: blur(7px);
+}
+.modal-body {
+  padding: 0;
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about,
+.author,
+.buy {
+  background-color: #eee;
+}
+
+.about i {
+  font-size: 25px;
+  color: var(--color2);
+}
+
+.itd__circle {
+  margin: 0 auto 15px;
+  width: 70px;
+  height: 70px;
+  border: 3px solid var(--color2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  margin: 10px auto 20px;
+  width: 100px;
+  height: 2px;
+  background-color: var(--color1);
+}
+
+.forwho h5 {
+  padding: 50px;
+  border: 3px solid var(--color1);
+}
+
+.programm {
+  background-color: #eee;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: var(--color2);
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.itd__learn {
+  border: 3px solid var(--color2);
+  padding: 35px;
+}
+
+.people-img {
+  border: 3px solid var(--color1);
+  border-radius: 50%;
+}
+.people-col {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.people-cont::after {
+  content: " ";
+  display: block;
+  margin: 10px auto 20px;
+  width: 100px;
+  height: 3px;
+  background-color: var(--color2);
+}
+
+.people-col h3 {
+  text-align: center;
+}
+
+.author-img {
+  max-height: 530px;
+  height: 100%;
+}
+
+.buy-btn {
+  display: inline-block !important;
+  background: var(--color2);
+  background-size: cover;
+  width: 256px !important;
+  height: 54px !important;
+  border: none !important;
+  border-radius: 14px !important;
+  padding: 18px !important;
+  text-decoration: none !important;
+  box-shadow: 3px 2px 8px rgba(71, 66, 66, 0.22) !important;
+  text-align: center !important;
+  outline: none !important;
+}
+
+.buy-text {
+  font-family: Verdana, Arial, sans-serif !important;
+  display: block;
+  font-weight: bold !important;
+  font-size: 14px !important;
+  color: #ffffff !important;
+  line-height: 18px !important;
+}
+
+.footer-col {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer a {
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+.footer-circle {
+  margin: 0 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  padding: 30px;
+}
+
+.color1 {
+  color: var(--color1);
+}
+.color2 {
+  color: var(--color2);
+}
+
+.bg1 {
+  background-color: var(--color1);
+}
+.bg2 {
+  background-color: var(--color2);
+}
